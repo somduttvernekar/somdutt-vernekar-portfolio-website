@@ -13,10 +13,6 @@ export const resumeData = {
         label: "LinkedIn",
         url: "https://www.linkedin.com/in/somdutt-vernekar-204603169/",
       },
-      {
-        label: "Github",
-        url: "https://github.com/",
-      },
     ],
   },
 

@@ -109,9 +109,16 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
-          <button className="px-4 py-2 bg-white text-black text-sm font-bold rounded-full hover:bg-blue-500 hover:text-white transition-all">
+         <a
+            href={
+              /Mobi|Android|iPhone/i.test(navigator.userAgent)
+                ? `tel:${resumeData.basics.phone}`
+                : "#contact"
+            }
+            className="px-4 py-2 bg-white text-black text-sm font-bold rounded-full hover:bg-blue-500 hover:text-white transition-all"
+          >
             Contact
-          </button>
+          </a>
         </div>
 
         {/* Mobile Toggle */}
@@ -435,7 +442,7 @@ const Education = () => {
 
 const Footer = () => {
   return (
-    <footer className="py-12 border-t border-white/10">
+    <footer id="contact" className="py-12 border-t border-white/10">
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
         <div className="text-center md:text-left">
           <h3 className="text-2xl font-bold text-white mb-2">
@@ -529,7 +536,14 @@ export default function App() {
         <h1 className="text-4xl font-bold mb-2">{resumeData.basics.name}</h1>
         <p className="text-xl mb-4">{resumeData.basics.title}</p>
         <div className="flex gap-4 text-sm mb-8">
-          <span>{resumeData.basics.email}</span>
+          <a href={`mailto:${resumeData.basics.email}`}>
+            {resumeData.basics.email}
+          </a>
+
+          <a href={`tel:${resumeData.basics.phone}`}>
+            {resumeData.basics.phone}
+          </a>
+
           <span>{resumeData.basics.location}</span>
         </div>
         <h2 className="text-2xl font-bold border-b-2 border-black mb-4">

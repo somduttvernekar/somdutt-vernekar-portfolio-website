@@ -3,44 +3,57 @@ export const resumeData = {
     name: "Somdutt Vernekar",
     initials: "SV",
     title: "Backend & Generative AI Engineer",
-    summary: "Software Engineer skilled in Generative AI, building end-to-end AI powered solutions. Backend proficient in Python, Node.js, and .NET. Experienced in integrating various LLMs to solve complex business challenges. Dedicated to building high-performance systems that leverage innovative AI technologies.",
+    summary:
+      "Software Engineer specializing in Generative AI and backend systems. Experienced in building production AI solutions including RAG chatbots and intelligent insight extraction systems. Proficient in Python, Node.js, and .NET, with strong expertise in integrating LLMs to solve real-world business challenges.",
     location: "Goa, India",
     email: "somvernekar55@gmail.com",
     phone: "8552875676",
     links: [
       {
         label: "LinkedIn",
-        url: "https://www.linkedin.com/in/somduttvernekar-204603169"
-      }
-    ]
+        url: "https://www.linkedin.com/in/somdutt-vernekar-204603169/",
+      },
+      {
+        label: "Github",
+        url: "https://github.com/",
+      },
+    ],
   },
+
   experience: [
     {
       company: "Claysys Technologies",
       roles: [
         {
-          title: "Sr. Software Engineer",
-          dates: "2023 – Present",
+          title: "Generative AI Engineer",
+          dates: "2024 – Present",
           bullets: [
-            "Leading multiple production GenAI projects with 4+ live RAG chatbots serving both client and internal environments, including Employee Assistance chatbot serving a leading US Credit Union, and Internal chatbots like Meeting Insights, RPA manual-trained assistance bot and Support bot.",
-            "Resolved critical RAG retrieval accuracy issues by implementing enhanced contextual retrieval techniques, significantly improving response quality and LLM performance across production systems.",
-            "Built PMHeatmap which analyzes project meeting transcripts and emails and visualizes key insights including key concerns, risk matrix, action items, trending topics, sentiment analysis, and project health metrics converting unstructured data like documents, email or Transcripts into structured formats.",
-            "Architected and implemented comprehensive deduplication system using vector embeddings and similarity search, eliminating duplicate insights data and improving system efficiency by significant margins.",
-            "Conducted comprehensive code reviews and pull request evaluations, ensuring code quality, best practices adherence, and maintaining system integrity across multiple development teams.",
-            "Reviewed and evaluated hackathon projects as part of company recruitment process, assessing technical implementation, code quality, and problem-solving approaches of potential candidates."
-          ]
+            "Built and deployed multiple production RAG-based AI chatbots serving enterprise use cases including employee assistance and internal knowledge systems.",
+            "Developed PMHeatmap which analyzes meeting transcripts and emails to extract structured insights such as key concerns, action items, risk matrix, sentiment, and project health metrics.",
+            "Improved chatbot response accuracy by implementing advanced contextual retrieval techniques and optimizing vector search pipelines.",
+          ],
+        },
+        {
+          title: "Sr. Software Engineer",
+          dates: "2023 – 2024",
+          bullets: [
+            "Led backend development for enterprise AI chatbot systems integrating LLMs with scalable APIs built using Python and FastAPI.",
+            "Architected a vector-embedding based deduplication system to eliminate duplicate insights and improve AI knowledge retrieval efficiency.",
+            "Conducted code reviews and technical evaluations across teams to maintain high engineering standards.",
+          ],
         },
         {
           title: "Software Engineer",
           dates: "2022 – 2023",
           bullets: [
-            "Led and architected Feedback Resolution Mechanism where it trains the bot by taking user feedbacks if the LLM is not able to generate the correct response.",
-            "Maintained and upgraded Core Chatbot Backend API for storing and maintaining critical data including chat conversations, user details, and system configurations, serving as the primary backend for chatbot operations",
-            "Handled production chatbot deployments and maintenance, serving as the first point of contact for system issues, troubleshooting, and performance optimization for a leading US Credit Union"
-          ]
-        }
-      ]
+            "Designed and implemented a feedback resolution mechanism allowing AI chatbots to learn from user feedback and improve response accuracy.",
+            "Maintained the core chatbot backend responsible for conversation storage, user data, and AI system configurations.",
+            "Managed production deployments and troubleshooting of enterprise chatbot systems.",
+          ],
+        },
+      ],
     },
+
     {
       company: "Cloud Counselage Pvt. Ltd.",
       roles: [
@@ -48,50 +61,94 @@ export const resumeData = {
           title: "Web Developer Intern",
           dates: "07/2021 – 08/2021",
           bullets: [
-            "Led development of an online code editor that allowed programmers to write and execute HTML, CSS and JavaScript code within a single editor.",
-            "My performance on this project earned me a Certificate of Appreciation from the Company."
-          ]
-        }
-      ]
-    }
+            "Developed an online code editor enabling users to write and execute HTML, CSS, and JavaScript within a single interface.",
+            "Received a Certificate of Appreciation for strong project performance.",
+          ],
+        },
+      ],
+    },
   ],
+
   skills: {
-    languages: ["Python", "Typescript/Javascript (Node.js)", "C#", "HTML/CSS"],
-    frameworks: ["FastAPI", "LangChain", "LlamaIndex", ".Net", "Vue.js", "Express.js"],
-    databases: ["Qdrant", "SQL Server"],
-    cloud: ["Azure OpenAI", "Azure App Service", "Azure Key Vault"]
+    "Generative AI": [
+      "Generative AI",
+      "RAG",
+      "LLMs",
+      "Prompt Engineering",
+      "Embeddings",
+      "Semantic Search",
+      "Vector Databases",
+      "AI Agents",
+    ],
+
+    Backend: [
+      "Python",
+      "FastAPI",
+      "Node.js",
+      ".NET Core",
+      "REST APIs",
+      "Microservices",
+      "API Design",
+    ],
+
+    "AI Frameworks": [
+      "LangChain",
+      "LlamaIndex",
+      "HuggingFace",
+      "Transformers",
+    ],
+
+    Databases: [
+      "Qdrant",
+      "SQL Server",
+    ],
+
+    Cloud: [
+      "Azure OpenAI",
+      "Azure App Service",
+      "Azure Key Vault",
+      "Docker",
+      "CI/CD",
+      "Git",
+    ],
   },
+
   education: [
     {
       institution: "Don Bosco College of Engineering",
       degree: "B.E in Computer Engineering",
-      dates: "06/2018 – 07/2022"
-    }
+      dates: "06/2018 – 07/2022",
+    },
   ],
+
   projects: [
     {
-      title: "Diagnosis of Multiple Diseases using Machine Learning Techniques on Retinal Images",
-      description: "This project is based on using the VGG-16 machine learning model to automatically diagnose multiple diseases from digital fundus images. The automated approach aims to reduce the time required for manual examination of numerous retinal images by ophthalmologists."
-    }
+      title:
+        "Diagnosis of Multiple Diseases using Machine Learning Techniques on Retinal Images",
+      description:
+        "Developed a system using the VGG-16 deep learning model to automatically detect multiple diseases from retinal fundus images. The approach reduces the manual effort required by ophthalmologists to analyze large volumes of retinal images.",
+    },
   ],
+
   achievements: [
     {
       title: "GenAI Leadership",
       value: "4+",
       context: "Production RAG chatbots deployed",
-      type: "metric"
+      type: "metric",
     },
     {
       title: "System Efficiency",
       value: "High",
       context: "Architected vector deduplication system",
-      type: "capability"
+      type: "capability",
     },
     {
-      title: "Recognition",
-      value: "Award",
-      context: "Certificate of Appreciation from Cloud Counselage",
-      type: "metric"
-    }
-  ]
+      title: "AI Systems Built",
+      value: "5+",
+      context:
+        "Enterprise AI systems including RAG chatbots and insight extraction platforms",
+      type: "metric",
+    },
+  ],
 };

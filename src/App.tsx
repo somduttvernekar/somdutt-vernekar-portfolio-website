@@ -98,7 +98,7 @@ const Navbar = () => {
           {resumeData.basics.name}
         </a>
 
-        {/* Desktop Nav */}
+        {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <a
@@ -109,19 +109,17 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
-         <a
-            href={
-              /Mobi|Android|iPhone/i.test(navigator.userAgent)
-                ? `tel:${resumeData.basics.phone}`
-                : "#contact"
-            }
+
+          {/* Desktop Contact → Email */}
+          <a
+            href={`mailto:${resumeData.basics.email}?subject=Opportunity for Somdutt Vernekar`}
             className="px-4 py-2 bg-white text-black text-sm font-bold rounded-full hover:bg-blue-500 hover:text-white transition-all"
           >
             Contact
           </a>
         </div>
 
-        {/* Mobile Toggle */}
+        {/* Mobile Menu Toggle */}
         <button
           className="md:hidden text-white"
           onClick={() => setIsOpen(!isOpen)}
@@ -130,7 +128,7 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Nav */}
+      {/* Mobile Navigation */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -149,6 +147,14 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
+
+            {/* Mobile Contact → Call */}
+            <a
+              href={`tel:${resumeData.basics.phone}`}
+              className="text-lg font-medium text-white/60 hover:text-white"
+            >
+              Contact
+            </a>
           </motion.div>
         )}
       </AnimatePresence>

@@ -122,13 +122,39 @@ export const resumeData = {
   ],
 
   projects: [
-    {
-      title:
-        "Diagnosis of Multiple Diseases using Machine Learning Techniques on Retinal Images",
-      description:
-        "Developed a system using the VGG-16 deep learning model to automatically detect multiple diseases from retinal fundus images. The approach reduces the manual effort required by ophthalmologists to analyze large volumes of retinal images.",
-    },
-  ],
+  {
+    title: "DocuMind AI",
+    year: "2025",
+    description:
+      "AI-powered document intelligence platform that indexes enterprise documents into a vector database and enables contextual question answering using Retrieval-Augmented Generation (RAG), significantly reducing manual support workload.",
+    tags: ["RAG", "Document Retrieval", "Vector Search"]
+  },
+
+  {
+    title: "WebMind AI",
+    year: "2025",
+    description:
+      "Intelligent website scraping and RAG chatbot system that extracts web content, converts it into embeddings, and enables conversational knowledge search across scraped data.",
+    tags: ["Web Scraping", "RAG", "LLM"]
+  },
+
+  {
+    title: "Project Intelligence Automation",
+    year: "2024",
+    description:
+      "Implemented meeting transcription, insights extraction, and automated task management workflows. The system analyzes meeting transcripts and emails to generate key concerns, action items, risks, and project health insights.",
+    tags: ["LLM", "Automation", "Insights Extraction"]
+  },
+
+  {
+    title:
+      "Diagnosis of Multiple Diseases using Machine Learning Techniques on Retinal Images",
+    year: "2022",
+    description:
+      "Developed a system using the VGG-16 deep learning model to automatically detect multiple diseases from retinal fundus images. The approach reduces the manual effort required by ophthalmologists to analyze large volumes of retinal images.",
+    tags: ["Machine Learning", "Image Processing", "Healthcare AI"]
+  }
+],
 
   achievements: [
     {

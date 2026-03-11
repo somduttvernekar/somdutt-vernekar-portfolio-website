@@ -278,6 +278,7 @@ const Projects = () => {
         <h2 className="text-4xl md:text-6xl font-bold tracking-tighter text-white mb-16">
           Key Projects
         </h2>
+
         <div className="grid grid-cols-1 gap-8">
           {resumeData.projects.map((project, idx) => (
             <motion.div
@@ -292,12 +293,26 @@ const Projects = () => {
                   <Code2 size={32} />
                 </div>
               </div>
+
               <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-blue-400 transition-colors">
                 {project.title}
               </h3>
-              <p className="text-white/60 leading-relaxed max-w-4xl">
+
+              <p className="text-white/60 leading-relaxed max-w-4xl mb-6">
                 {project.description}
               </p>
+
+              {/* TAGS */}
+              <div className="flex flex-wrap gap-2">
+                {project.tags?.map((tag, index) => (
+                  <span
+                    key={index}
+                    className="px-3 py-1 text-xs font-medium bg-blue-500/10 text-blue-400 border border-blue-500/20 rounded-full"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
             </motion.div>
           ))}
         </div>
